@@ -1,4 +1,4 @@
-# Build on push to main and deploy to GitHub Pages using official Pages Actions
+name: Build and deploy to GitHub Pages
 on:
   push:
     branches:
@@ -28,7 +28,7 @@ jobs:
       - name: Configure Pages
         uses: actions/configure-pages@v3
 
-      - name: Upload artifact
+      - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v1
         with:
           path: ./dist
