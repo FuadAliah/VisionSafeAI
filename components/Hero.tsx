@@ -15,10 +15,10 @@ export const Hero = ({ data, isAr }: HeroProps) => {
             <ShieldCheck size={64} className="text-white" />
           </div>
         </div>
-        <h1 className={`text-6xl md:text-5xl font-black text-indigo-900 mb-6 tracking-tight w-2/3 mx-auto ${isAr ? 'arabic-font leading-relaxed' : ''}`}>
+        <h1 className={`text-5xl font-black text-indigo-900 mb-6 tracking-tight w-2/3 mx-auto ${isAr ? 'arabic-font' : ''}`}>
           {data.title}
         </h1>
-        <p className={`text-2xl md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-light mb-12 ${isAr ? 'arabic-font' : ''}`}>
+        <p className={`text-2xl md:text-2xl text-gray-600 max-w-4xl mx-auto font-light mb-12 ${isAr ? 'arabic-font' : ''}`}>
           {data.subtitle}
         </p>
         <div className="inline-flex items-center gap-3 px-6 py-3 bg-white border-2 border-purple-200 rounded-full mb-8">
@@ -27,7 +27,7 @@ export const Hero = ({ data, isAr }: HeroProps) => {
             {isAr ? 'الذكاء الاصطناعي الصناعي' : 'Industrial Safety AI'}
           </span>
         </div>
-        
+
       </div>
     </section>
   );
