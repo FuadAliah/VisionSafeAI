@@ -1,14 +1,14 @@
 import { AlertCircle, Link as LinkIcon } from 'lucide-react';
 import { PresentationData } from '../types';
-import { 
-  BarChart, 
-  Bar, 
-  XAxis, 
-  YAxis, 
-  CartesianGrid, 
-  Tooltip, 
-  ResponsiveContainer, 
-  Cell 
+import {
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  ResponsiveContainer,
+  Cell
 } from 'recharts';
 import { useMemo } from 'react';
 
@@ -22,9 +22,9 @@ export const ProblemStatement = ({ data, isAr }: ProblemStatementProps) => {
     return data.problemStatement.stats.map((stat, index) => {
       const numericPart = stat.value.replace(/[^0-9.]/g, '');
       const val = parseFloat(numericPart) || 0;
-      return { 
-        ...stat, 
-        numericValue: val, 
+      return {
+        ...stat,
+        numericValue: val,
         originalValue: stat.value,
         fill: index % 2 === 0 ? '#a855f7' : '#9333ea'
       };
@@ -67,9 +67,9 @@ export const ProblemStatement = ({ data, isAr }: ProblemStatementProps) => {
             <ResponsiveContainer width="100%" height="100%" className="focus-within:outline-none">
               <BarChart data={chartData} className="focus-within:outline-none">
                 <CartesianGrid strokeDasharray="3 3" stroke="#e9d5ff" vertical={false} />
-                <XAxis dataKey="label" type="category" className={`${isAr ? 'arabic-font' : ''}`} />
+                <XAxis dataKey="label" type="category" className={`mt-2 ${isAr ? 'arabic-font' : ''}`} />
                 <YAxis type="number" hide />
-                <Tooltip 
+                <Tooltip
                   cursor={{ fill: 'rgba(168,85,247,0.1)' }}
                   contentStyle={{ backgroundColor: 'white', border: '2px solid #f3e8ff', borderRadius: '12px' }}
                 />
