@@ -15,8 +15,8 @@ export const Navigation = ({ lang, isAr, onLangToggle }: NavigationProps) => {
           <ShieldCheck size={24} className="text-white" />
         </div>
         <div>
-          <span className="text-xl font-black tracking-tighter text-gray-900">VisionSafe<span className="text-purple-600">AI</span></span>
-          <div className="text-[9px] font-black text-gray-500 tracking-[0.4em]">{isAr ? 'الذكاء الصناعي للمستقبل' : 'Industrial Intelligence'}</div>
+          <span className={`text-xl font-black tracking-tighter text-gray-900 ${isAr ? 'arabic-font' : ''}`}>VisionSafe<span className="text-purple-600">AI</span></span>
+          <div className={`text-[9px] font-black text-gray-500 tracking-[0.4em] ${isAr ? 'arabic-font' : ''}`}>{isAr ? 'الذكاء الصناعي للمستقبل' : 'Industrial Intelligence'}</div>
         </div>
       </div>
       <div className="flex items-center gap-6">

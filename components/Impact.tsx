@@ -21,16 +21,16 @@ export const Impact = ({ data, isAr }: ImpactProps) => {
               </h2>
             </div>
             <div className="bg-white border-2 border-purple-100 p-8 rounded-3xl">
-              <h4 className="text-purple-600 font-black mb-4 flex items-center gap-3 text-xl uppercase tracking-wider">
+              <h4 className={`text-purple-600 font-black mb-4 flex items-center gap-3 text-xl uppercase tracking-wider ${isAr ? 'arabic-font' : ''}`}>
                 <BarChart3 size={28} /> {isAr ? 'العائد على الاستثمار' : 'Return on Investment'}
               </h4>
-              <p className="text-xl text-gray-700 font-medium leading-relaxed">{data.businessImpact.roi}</p>
+              <p className={`text-xl text-gray-700 font-medium leading-relaxed ${isAr ? 'arabic-font' : ''}`}>{data.businessImpact.roi}</p>
             </div>
             <div className="bg-white border-2 border-green-100 p-8 rounded-3xl">
-              <h4 className="text-green-600 font-black mb-4 flex items-center gap-3 text-xl uppercase tracking-wider">
+              <h4 className={`text-green-600 font-black mb-4 flex items-center gap-3 text-xl uppercase tracking-wider ${isAr ? 'arabic-font' : ''}`}>
                 <Target size={28} /> {isAr ? 'القيمة الإستراتيجية' : 'Strategic Value'}
               </h4>
-              <p className="text-xl text-gray-700 font-medium leading-relaxed">{data.businessImpact.longTermValue}</p>
+              <p className={`text-xl text-gray-700 font-medium leading-relaxed ${isAr ? 'arabic-font' : ''}`}>{data.businessImpact.longTermValue}</p>
             </div>
           </div>
           <div className="flex flex-col items-center justify-center gap-8 text-center">
@@ -44,17 +44,6 @@ export const Impact = ({ data, isAr }: ImpactProps) => {
               {isAr ? 'سلامة بلا حوادث، إنتاجية بلا توقف' : 'Zero Incidents, Unstoppable Productivity'}
             </h3>
           </div>
-        </div>
-        
-        {/* CTA */}
-        <div className="mt-12 text-center">
-          <a 
-            href="mailto:eye.design17@yahoo.com?subject=VisionSafe AI - ROI Inquiry&body=I want to learn more about the ROI and business impact of VisionSafe AI."
-            className={`inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white font-black rounded-full transition-all text-lg ${isAr ? 'arabic-font' : ''}`}
-          >
-            {isAr ? 'احسب عائد الاستثمار' : 'Calculate Your ROI'}
-            <ChevronRight size={20} className={isAr ? 'rotate-180' : ''} />
-          </a>
         </div>
       </div>
     </section>

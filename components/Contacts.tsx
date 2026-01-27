@@ -28,7 +28,7 @@ export const Contacts = ({ isAr }: ContactsProps) => {
             <div className="p-2 bg-purple-100 rounded-lg group-hover:bg-purple-200 transition-colors">
               <Mail size={20} className="text-purple-600" />
             </div>
-            <span className="text-base font-medium">eye.design17@yahoo.com</span>
+            <span className={`text-base font-medium ${isAr ? 'arabic-font' : ''}`}>eye.design17@yahoo.com</span>
           </a>
 
           <div className="hidden md:block w-px h-8 bg-gray-300"></div>
@@ -41,7 +41,7 @@ export const Contacts = ({ isAr }: ContactsProps) => {
             <div className="p-2 bg-purple-100 rounded-lg group-hover:bg-purple-200 transition-colors">
               <Phone size={20} className="text-purple-600" />
             </div>
-            <span className="text-base font-medium">00962776968571</span>
+            <span className={`text-base font-medium ${isAr ? 'arabic-font' : ''}`}>00962776968571</span>
           </a>
         </div>
         

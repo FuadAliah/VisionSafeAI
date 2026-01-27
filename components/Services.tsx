@@ -19,7 +19,7 @@ export const Services = ({ services, additionalServices, isAr }: ServicesProps) 
           <h2 className={`text-5xl font-black text-gray-900 mb-3 ${isAr ? 'arabic-font leading-relaxed' : ''}`}>
             {isAr ? 'خدماتنا' : 'Our Services'}
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className={`text-xl text-gray-600 max-w-3xl mx-auto ${isAr ? 'arabic-font' : ''}`}>
             {isAr ? 'حلول متقدمة للسلامة الصناعية مدعومة بالذكاء الاصطناعي' : 'Advanced AI-powered industrial safety solutions'}
           </p>
         </div>

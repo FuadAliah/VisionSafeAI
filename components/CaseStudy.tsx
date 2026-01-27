@@ -12,7 +12,7 @@ export const CaseStudy = ({ data, isAr }: CaseStudyProps) => {
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className={isAr ? 'order-2' : ''}>
-            <div className="inline-block px-5 py-2 bg-green-50 border-2 border-green-200 rounded-full text-green-600 text-sm font-bold mb-6 uppercase tracking-wider">
+            <div className={`inline-block px-5 py-2 bg-green-50 border-2 border-green-200 rounded-full text-green-600 text-sm font-bold mb-6 uppercase tracking-wider ${isAr ? 'arabic-font' : ''}`}>
               {isAr ? 'دراسة حالة حقيقية' : 'Real-World Case Study'}
             </div>
             <h2 className={`text-5xl font-black text-gray-900 mb-5 leading-tight ${isAr ? 'arabic-font' : ''}`}>
@@ -32,7 +32,7 @@ export const CaseStudy = ({ data, isAr }: CaseStudyProps) => {
               ))}
             </div>
             {data.caseStudy.sourceUrl && (
-              <a href={data.caseStudy.sourceUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-8 py-4 bg-white border-2 border-purple-200 rounded-xl hover:border-purple-400 transition-all text-purple-600 text-base font-bold">
+              <a href={data.caseStudy.sourceUrl} target="_blank" rel="noopener noreferrer" className={`inline-flex items-center gap-2 px-8 py-4 bg-white border-2 border-purple-200 rounded-xl hover:border-purple-400 transition-all text-purple-600 text-base font-bold ${isAr ? 'arabic-font' : ''}`}>
                 <LinkIcon size={20} /> {isAr ? 'عرض دراسة الحالة كاملة' : 'View Full Case Study'}
               </a>
             )}

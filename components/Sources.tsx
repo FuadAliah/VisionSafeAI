@@ -14,7 +14,7 @@ export const Sources = ({ data, isAr }: SourcesProps) => {
           <h2 className={`text-5xl font-black text-gray-900 mb-5 ${isAr ? 'arabic-font' : ''}`}>
             {isAr ? 'المراجع والمصادر' : 'References & Sources'}
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className={`text-xl text-gray-600 max-w-3xl mx-auto ${isAr ? 'arabic-font' : ''}`}>
             {isAr ? 'تم التحقق من هذه البيانات من خلال البحث المباشر في المواقع الرسمية لرواد السلامة الصناعية.' : 'Verified through direct research from the official sites of industrial safety leaders.'}
           </p>
         </div>
@@ -23,7 +23,7 @@ export const Sources = ({ data, isAr }: SourcesProps) => {
             <a key={idx} href={source.uri} target="_blank" rel="noopener noreferrer" className="flex items-center justify-between p-6 bg-white border-2 border-gray-100 rounded-2xl hover:border-purple-300 transition-all group">
               <div className="flex items-center gap-4">
                 <Globe size={28} className="text-gray-400 group-hover:text-purple-600 transition-colors" />
-                <p className="text-gray-900 text-lg font-bold">{source.title}</p>
+                <p className={`text-gray-900 text-lg font-bold ${isAr ? 'arabic-font' : ''}`}>{source.title}</p>
               </div>
               <ExternalLink size={24} className="text-gray-400 group-hover:text-purple-600 transition-colors" />
             </a>

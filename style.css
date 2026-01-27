@@ -1,4 +1,16 @@
-html, body, .arabic-font, span, p, a, h1, h2, h3, h4, h5, h6 {
+html {
   font-family: 'Cairo', sans-serif;
   line-height: 1.6;
+}
+
+.arabic-font {
+  line-height: 1.65;
+}
+
+/* Remove outline on chart focus */
+.recharts-wrapper:focus,
+.recharts-wrapper:focus-within,
+.recharts-wrapper *:focus,
+.recharts-wrapper *:focus-within {
+  outline: none !important;
 }
