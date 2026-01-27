@@ -17,39 +17,41 @@ export const Services = ({ services, additionalServices, isAr }: ServicesProps) 
         {/* Title Section */}
         <div className="mb-16 text-center">
           <h2 className={`text-5xl font-black text-gray-900 mb-3 ${isAr ? 'arabic-font leading-relaxed' : ''}`}>
-            {isAr ? 'خدماتنا' : 'Our Services'}
+            {isAr ? 'الأتمتة في اكتشاف المخاطر' : 'Automation in Risk Detection'}
           </h2>
           <p className={`text-xl text-gray-600 max-w-3xl mx-auto ${isAr ? 'arabic-font' : ''}`}>
-            {isAr ? 'حلول متقدمة للسلامة الصناعية مدعومة بالذكاء الاصطناعي' : 'Advanced AI-powered industrial safety solutions'}
+            {isAr ? 'يعمل النظام الذكي كحارس رقمي يراقب البيئة الصناعية باستمرار، مكتشفاً الانحرافات الدقيقة التي قد تغيب عن العين البشرية.' : 'The AI system works as a digital guard monitoring the industrial environment continuously, uncovering subtle deviations that may escape human observation.'}
           </p>
         </div>
 
         {/* Main Services - Horizontal Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 mb-24">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-24">
           {services.map((service, idx) => (
-            <div 
-              key={idx} 
+            <div
+              key={idx}
               className={`overflow-hidden group transition-all hover:border-purple-300`}
             >
               {/* Image on Left */}
               <div className="w-full h-64 md:h-auto relative">
                 <ServiceMedia url={service.mediaUrl} title={service.title} />
               </div>
-              
+
               {/* Information on Right */}
-              <div className="w-full py-6 flex flex-col justify-center">
-                <div className="flex items-center gap-4 mb-4">
+              <div className="w-full py-4 flex flex-col justify-center border border-gray-200 p-4 rounded-b-2xl">
+                <div className="flex items-start gap-4">
                   <div className="p-3 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl">
                     <DynamicIcon name={service.icon} size={24} className="text-white" />
                   </div>
-                  <h3 className={`text-2xl font-black text-gray-900 leading-tight ${isAr ? 'arabic-font' : ''}`}>
-                    {service.title}
-                  </h3>
+                  <div className="flex flex-col gap-2">
+                    <h3 className={`text-2xl font-black text-gray-900 leading-tight ${isAr ? 'arabic-font' : ''}`}>
+                      {service.title}
+                    </h3>
+                    <p className={`text-base text-gray-600 mb-6 leading-relaxed h-16 ${isAr ? 'arabic-font' : ''}`}>
+                      {service.description}
+                    </p>
+                  </div>
                 </div>
-                <p className={`text-base text-gray-600 mb-6 leading-relaxed ${isAr ? 'arabic-font' : ''}`}>
-                  {service.description}
-                </p>
-                <div className={`inline-flex items-center gap-2 text-sm font-bold text-purple-600 py-3 px-6 bg-purple-50 rounded-xl border border-purple-100 uppercase tracking-wider w-fit ${isAr ? 'arabic-font' : ''}`}>
+                <div className={`inline-flex items-center gap-2 text-xs font-bold text-purple-600 py-2 px-4 bg-purple-50 rounded-xl border border-purple-100 uppercase tracking-wider w-fit ${isAr ? 'arabic-font' : ''}`}>
                   <Target size={14} /> {service.impact}
                 </div>
               </div>
@@ -59,10 +61,10 @@ export const Services = ({ services, additionalServices, isAr }: ServicesProps) 
 
         {/* Additional Services at the end */}
         <AdditionalServices services={additionalServices} isAr={isAr} />
-        
+
         {/* CTA */}
         <div className="mt-16 text-center">
-          <a 
+          <a
             href="mailto:eye.design17@yahoo.com?subject=VisionSafe AI - Service Inquiry&body=I'm interested in implementing VisionSafe AI services in my facility."
             className={`inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white font-black rounded-full transition-all text-lg ${isAr ? 'arabic-font' : ''}`}
           >

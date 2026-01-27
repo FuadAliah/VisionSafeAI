@@ -5,6 +5,7 @@ import { Navigation } from './components/Navigation';
 import { Hero } from './components/Hero';
 import { ProblemStatement } from './components/ProblemStatement';
 import { CurrentSituation } from './components/CurrentSituation';
+import { ComputerVision } from './components/ComputerVision';
 import { Services } from './components/Services';
 import { Industries } from './components/Industries';
 import { CaseStudy } from './components/CaseStudy';
@@ -32,13 +33,14 @@ const App: React.FC = () => {
         <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-gradient-to-tr from-purple-100/25 to-purple-200/10 rounded-full blur-3xl translate-y-1/4 -translate-x-1/4"></div>
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-gradient-to-br from-purple-50/30 to-transparent rounded-full blur-3xl"></div>
       </div>
-      
+
       <Navigation lang={lang} isAr={isAr} onLangToggle={handleLangToggle} />
 
       <main className="relative z-10">
         <Hero data={data} isAr={isAr} />
         <ProblemStatement data={data} isAr={isAr} />
-        <CurrentSituation isAr={isAr} />
+        {/* <CurrentSituation isAr={isAr} /> */}
+        {/* <ComputerVision isAr={isAr} /> */}
         <Services services={data.services} additionalServices={ADDITIONAL_SERVICES} isAr={isAr} />
         <Industries industries={TARGET_INDUSTRIES} isAr={isAr} />
         <CaseStudy data={data} isAr={isAr} />
