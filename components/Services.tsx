@@ -29,7 +29,7 @@ export const Services = ({ services, additionalServices, isAr }: ServicesProps) 
           {services.map((service, idx) => (
             <div
               key={idx}
-              className={`group hover:shadow-lg transition-all`}
+              className={`group bg-transparent hover:-translate-y-2 transition-all`}
             >
               {/* Image on up */}
               <div className="w-full h-64 md:h-auto relative">
@@ -37,13 +37,13 @@ export const Services = ({ services, additionalServices, isAr }: ServicesProps) 
               </div>
 
               {/* Information on down */}
-              <div className="w-full py-4 flex flex-col justify-center border border-gray-200 p-4 rounded-b-2xl">
+              <div className="w-full bg-white py-4 flex flex-col justify-center border border-gray-200 p-4 rounded-b-2xl">
                 <div className="flex items-start gap-4">
                   <div className="p-3 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl">
                     <DynamicIcon name={service.icon} size={24} className="text-white" />
                   </div>
                   <div className="flex flex-col gap-2">
-                    <h3 className={`text-2xl mt-3 font-bold text-gray-900 leading-tight ${isAr ? 'arabic-font' : ''}`}>
+                    <h3 className={`group-hover:text-purple-600 transition-all text-2xl mt-3 font-bold text-gray-900 leading-tight ${isAr ? 'arabic-font' : ''}`}>
                       {service.title}
                     </h3>
                     <p className={`text-base text-gray-600 mb-6 leading-relaxed h-12 ${isAr ? 'arabic-font' : ''}`}>
