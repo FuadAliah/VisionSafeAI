@@ -4,6 +4,7 @@ import { Truck, ShoppingCart, Factory, Utensils, Box } from 'lucide-react';
 export const STATIC_DATA: Record<Language, PresentationData> = {
   en: {
     title: "Artificial Intelligence in Service of Industry and Automating Safety Standards",
+    secTitle: "For Factories, Facilities and Logistics Services",
     subtitle: "AI-Powered Computer Vision for the Zero-Harm Factory",
     problemStatement: {
       text: "Global manufacturing faces millions of accidents yearly, leading to human loss and billions in financial impact. Traditional safety protocols are reactive and prone to human error.",
@@ -93,7 +94,8 @@ export const STATIC_DATA: Record<Language, PresentationData> = {
     ]
   },
   ar: {
-    title: "الذكاء الاصطناعي في خدمة الصناعة وأتمتة معايير السلامة",
+    title: "إدارة مخاطر السلامة والصحة العامة بالذكاء الاصطناعي",
+    secTitle: "للمصانع، المنشآت والخدمات اللوجستية",
     subtitle: "رؤية حاسوبية مدعومة بالذكاء الاصطناعي لمصانع خالية من المخاطر",
     problemStatement: {
       text: "يواجه التصنيع العالمي ملايين الحوادث سنوياً، مما يؤدي إلى خسائر بشرية وآثار مالية تقدر بالمليارات. بروتوكولات السلامة التقليدية هي رد فعل ومعرضة للخطأ البشري.",

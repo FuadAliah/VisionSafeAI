@@ -27,6 +27,7 @@ export interface CaseStudy {
 
 export interface PresentationData {
   title: string;
+  secTitle: string;
   subtitle: string;
   problemStatement: {
     text: string;

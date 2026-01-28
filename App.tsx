@@ -27,7 +27,7 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className={`min-h-screen bg-gradient-to-br from-gray-50 via-white to-purple-50/30 text-gray-900 flex flex-col font-sans relative`} dir={directionClass}>
+    <div className={`min-h-screen bg-gradient-to-br from-gray-50 via-white to-purple-50/30 text-gray-900 flex flex-col font-sans relative mt-[72px]`} dir={directionClass}>
       <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
         <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-to-br from-purple-200/20 to-purple-300/10 rounded-full blur-3xl -translate-y-1/4 translate-x-1/4"></div>
         <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-gradient-to-tr from-purple-100/25 to-purple-200/10 rounded-full blur-3xl translate-y-1/4 -translate-x-1/4"></div>

@@ -17,7 +17,7 @@ export const CurrentSituation = ({ isAr }: CurrentSituationProps) => {
                   {isAr ? 'الوضع الراهن' : 'Current Situation'}
                 </span>
               </div>
-              <h2 className={`text-4xl font-black text-white mb-6 leading-tight ${isAr ? 'arabic-font' : ''}`}>
+              <h2 className={`text-4xl font-bold text-indigo-500 mb-6 leading-tight ${isAr ? 'arabic-font' : ''}`}>
                 {isAr ? 'الفجوة في أنظمة السلامة التقليدية' : 'The Gap in Traditional Safety Systems'}
               </h2>
               <p className={`text-xl text-gray-300 leading-relaxed ${isAr ? 'arabic-font' : ''}`}>
@@ -35,7 +35,7 @@ export const CurrentSituation = ({ isAr }: CurrentSituationProps) => {
                   <Users size={24} className="text-blue-400" />
                 </div>
                 <div className="flex flex-col gap-2">
-                  <h3 className={`text-xl font-black text-white ${isAr ? 'arabic-font' : ''}`}>
+                  <h3 className={`text-xl font-bold text-white ${isAr ? 'arabic-font' : ''}`}>
                     {isAr ? 'رقابة محدودة الوقت' : 'Limited Time Monitoring'}
                   </h3>
                   <p className={`text-gray-300 text-sm leading-relaxed ${isAr ? 'arabic-font' : ''}`}>
@@ -52,7 +52,7 @@ export const CurrentSituation = ({ isAr }: CurrentSituationProps) => {
                   <FileText size={24} className="text-blue-400" />
                 </div>
                 <div className="flex flex-col gap-2">
-                  <h3 className={`text-xl font-black text-white ${isAr ? 'arabic-font' : ''}`}>
+                  <h3 className={`text-xl font-bold text-white ${isAr ? 'arabic-font' : ''}`}>
                     {isAr ? 'تقارير متأخرة' : 'Late Reports'}
                   </h3>
                   <p className={`text-gray-300 text-sm leading-relaxed ${isAr ? 'arabic-font' : ''}`}>
@@ -70,7 +70,7 @@ export const CurrentSituation = ({ isAr }: CurrentSituationProps) => {
             <div className="mb-8">
               <div className="inline-flex items-center gap-3 px-3 py-2 bg-red-500/20 border border-red-500/30 rounded-xl">
                 <AlertTriangle size={16} className="text-red-400" />
-                <span className={`text-red-400 text-sm font-black ${isAr ? 'arabic-font' : ''}`}>
+                <span className={`text-red-400 text-sm font-bold ${isAr ? 'arabic-font' : ''}`}>
                   {isAr ? 'نقاط الضعف الحرجة' : 'Critical Weaknesses'}
                 </span>
               </div>
@@ -84,7 +84,7 @@ export const CurrentSituation = ({ isAr }: CurrentSituationProps) => {
                   <EyeOff size={24} className="text-red-400" />
                 </div>
                 <div className="flex flex-col gap-2">
-                  <h3 className={`text-xl font-black text-white ${isAr ? 'arabic-font' : ''}`}>
+                  <h3 className={`text-xl font-bold text-white ${isAr ? 'arabic-font' : ''}`}>
                     {isAr ? 'النقاط العمياء (Blind Spots)' : 'Blind Spots'}
                   </h3>
                   <p className={`text-gray-300 text-sm leading-relaxed ${isAr ? 'arabic-font' : ''}`}>
@@ -101,7 +101,7 @@ export const CurrentSituation = ({ isAr }: CurrentSituationProps) => {
                   <Clock size={24} className="text-red-400" />
                 </div>
                 <div className="flex flex-col gap-2">
-                  <h3 className={`text-xl font-black text-white ${isAr ? 'arabic-font' : ''}`}>
+                  <h3 className={`text-xl font-bold text-white ${isAr ? 'arabic-font' : ''}`}>
                     {isAr ? 'زمن الاستجابة البطيء' : 'Slow Response Time'}
                   </h3>
                   <p className={`text-gray-300 text-sm leading-relaxed ${isAr ? 'arabic-font' : ''}`}>
@@ -118,7 +118,7 @@ export const CurrentSituation = ({ isAr }: CurrentSituationProps) => {
                   <TrendingDown size={24} className="text-red-400" />
                 </div>
                 <div className="flex flex-col gap-2">
-                  <h3 className={`text-xl font-black text-white ${isAr ? 'arabic-font' : ''}`}>
+                  <h3 className={`text-xl font-bold text-white ${isAr ? 'arabic-font' : ''}`}>
                     {isAr ? 'التكلفة الخفية' : 'Hidden Cost'}
                   </h3>
                   <p className={`text-gray-300 text-sm leading-relaxed ${isAr ? 'arabic-font' : ''}`}>

@@ -13,18 +13,18 @@ export const Impact = ({ data, isAr }: ImpactProps) => {
         <div className="flex flex-row-reverse gap-12 items-center">
           <div className={`w-1/2 space-y-8 ${isAr ? 'order-2' : ''}`}>
             <div className="flex items-center gap-5">
-              <h2 className={`text-5xl font-black text-gray-900 ${isAr ? 'arabic-font' : ''}`}>
+              <h2 className={`text-5xl font-bold text-indigo-500 ${isAr ? 'arabic-font' : ''}`}>
                 {isAr ? 'الجدوى الاقتصادية' : 'Economic Viability'}
               </h2>
             </div>
             <div className="bg-white border-2 border-purple-100 p-8 rounded-3xl">
-              <h4 className={`text-purple-600 font-black mb-4 flex items-center gap-3 text-xl uppercase tracking-wider ${isAr ? 'arabic-font' : ''}`}>
+              <h4 className={`text-purple-600 font-bold mb-4 flex items-center gap-3 text-xl uppercase tracking-wider ${isAr ? 'arabic-font' : ''}`}>
                 <BarChart3 size={28} /> {isAr ? 'العائد على الاستثمار' : 'Return on Investment'}
               </h4>
               <p className={`text-xl text-gray-700 font-medium leading-relaxed ${isAr ? 'arabic-font' : ''}`}>{data.businessImpact.roi}</p>
             </div>
             <div className="bg-white border-2 border-green-100 p-8 rounded-3xl">
-              <h4 className={`text-green-600 font-black mb-4 flex items-center gap-3 text-xl uppercase tracking-wider ${isAr ? 'arabic-font' : ''}`}>
+              <h4 className={`text-green-600 font-bold mb-4 flex items-center gap-3 text-xl uppercase tracking-wider ${isAr ? 'arabic-font' : ''}`}>
                 <Target size={28} /> {isAr ? 'القيمة الإستراتيجية' : 'Strategic Value'}
               </h4>
               <p className={`text-xl text-gray-700 font-medium leading-relaxed ${isAr ? 'arabic-font' : ''}`}>{data.businessImpact.longTermValue}</p>
@@ -37,7 +37,7 @@ export const Impact = ({ data, isAr }: ImpactProps) => {
                 <ShieldCheck size={56} className="text-white" />
               </div>
             </div>
-            <h3 className={`text-3xl font-black text-gray-900 ${isAr ? 'arabic-font leading-relaxed' : ''}`}>
+            <h3 className={`text-3xl font-bold text-gray-900 ${isAr ? 'arabic-font leading-relaxed' : ''}`}>
               {isAr ? 'سلامة بلا حوادث، إنتاجية بلا توقف' : 'Zero Incidents, Unstoppable Productivity'}
             </h3>
           </div>

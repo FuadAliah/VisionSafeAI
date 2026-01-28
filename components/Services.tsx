@@ -16,7 +16,7 @@ export const Services = ({ services, additionalServices, isAr }: ServicesProps) 
       <div className="max-w-7xl mx-auto">
         {/* Title Section */}
         <div className="mb-16 text-center">
-          <h2 className={`text-5xl font-black text-gray-900 mb-3 ${isAr ? 'arabic-font leading-relaxed' : ''}`}>
+          <h2 className={`text-5xl font-bold text-indigo-500 mb-3 ${isAr ? 'arabic-font leading-relaxed' : ''}`}>
             {isAr ? 'الأتمتة في اكتشاف المخاطر' : 'Automation in Risk Detection'}
           </h2>
           <p className={`text-xl text-gray-600 max-w-3xl mx-auto ${isAr ? 'arabic-font' : ''}`}>
@@ -29,24 +29,24 @@ export const Services = ({ services, additionalServices, isAr }: ServicesProps) 
           {services.map((service, idx) => (
             <div
               key={idx}
-              className={`overflow-hidden group transition-all hover:border-purple-300`}
+              className={`group hover:shadow-lg transition-all`}
             >
-              {/* Image on Left */}
+              {/* Image on up */}
               <div className="w-full h-64 md:h-auto relative">
                 <ServiceMedia url={service.mediaUrl} title={service.title} />
               </div>
 
-              {/* Information on Right */}
+              {/* Information on down */}
               <div className="w-full py-4 flex flex-col justify-center border border-gray-200 p-4 rounded-b-2xl">
                 <div className="flex items-start gap-4">
                   <div className="p-3 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl">
                     <DynamicIcon name={service.icon} size={24} className="text-white" />
                   </div>
                   <div className="flex flex-col gap-2">
-                    <h3 className={`text-2xl font-black text-gray-900 leading-tight ${isAr ? 'arabic-font' : ''}`}>
+                    <h3 className={`text-2xl mt-3 font-bold text-gray-900 leading-tight ${isAr ? 'arabic-font' : ''}`}>
                       {service.title}
                     </h3>
-                    <p className={`text-base text-gray-600 mb-6 leading-relaxed h-16 ${isAr ? 'arabic-font' : ''}`}>
+                    <p className={`text-base text-gray-600 mb-6 leading-relaxed h-12 ${isAr ? 'arabic-font' : ''}`}>
                       {service.description}
                     </p>
                   </div>
@@ -66,7 +66,7 @@ export const Services = ({ services, additionalServices, isAr }: ServicesProps) 
         <div className="mt-16 text-center">
           <a
             href="mailto:eye.design17@yahoo.com?subject=VisionSafe AI - Service Inquiry&body=I'm interested in implementing VisionSafe AI services in my facility."
-            className={`inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white font-black rounded-full transition-all text-lg ${isAr ? 'arabic-font' : ''}`}
+            className={`inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white font-bold rounded-full transition-all text-lg ${isAr ? 'arabic-font' : ''}`}
           >
             {isAr ? 'احجز استشارة مجانية' : 'Book a Free Consultation'}
             <ChevronRight size={20} className={isAr ? 'rotate-180' : ''} />

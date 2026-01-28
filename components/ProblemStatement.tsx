@@ -40,7 +40,7 @@ export const ProblemStatement = ({ data, isAr }: ProblemStatementProps) => {
               <div className="p-3 bg-red-50 rounded-xl">
                 <AlertCircle size={32} className="text-red-500" />
               </div>
-              <h2 className={`text-4xl font-black text-gray-900 ${isAr ? 'arabic-font' : ''}`}>
+              <h2 className={`text-4xl font-bold text-indigo-500 ${isAr ? 'arabic-font' : ''}`}>
                 {isAr ? 'واقع السلامة الصناعية اليوم' : 'The Reality of Industrial Safety'}
               </h2>
             </div>
@@ -50,7 +50,7 @@ export const ProblemStatement = ({ data, isAr }: ProblemStatementProps) => {
             <div className="grid grid-cols-2 gap-4">
               {data.problemStatement.stats.map((stat, idx) => (
                 <div key={idx} className="bg-white border-2 border-gray-100 py-4 px-6 rounded-2xl hover:border-purple-300 transition-all">
-                  <div className={`text-4xl font-black text-purple-600 mb-2 ${isAr ? 'arabic-font' : ''}`}>{stat.value}</div>
+                  <div className={`text-4xl font-bold text-purple-600 mb-2 ${isAr ? 'arabic-font' : ''}`}>{stat.value}</div>
                   <div className={`text-sm text-gray-500 font-semibold uppercase tracking-wide mb-3 ${isAr ? 'arabic-font' : ''}`}>
                     {stat.label}
                   </div>

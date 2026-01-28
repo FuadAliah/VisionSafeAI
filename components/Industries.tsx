@@ -16,7 +16,7 @@ export const Industries = ({ industries, isAr }: IndustriesProps) => {
     <section className="py-24 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="mb-10 text-center">
-          <h2 className={`text-5xl font-black text-gray-900 mb-2 ${isAr ? 'arabic-font leading-relaxed' : ''}`}>
+          <h2 className={`text-5xl font-bold text-indigo-500 mb-2 ${isAr ? 'arabic-font leading-relaxed' : ''}`}>
             {isAr ? 'القطاعات المستهدفة' : 'Targeted Industries'}
           </h2>
         </div>
@@ -28,7 +28,7 @@ export const Industries = ({ industries, isAr }: IndustriesProps) => {
                 <div className="p-5 bg-gradient-to-br from-purple-100 to-purple-50 rounded-2xl mb-5 group-hover:scale-110 transition-transform border-2 border-purple-100">
                   <IconComponent size={40} className="text-purple-600" />
                 </div>
-                <h4 className={`text-base font-black text-gray-900 leading-tight ${isAr ? 'arabic-font' : ''}`}>
+                <h4 className={`text-base font-bold text-gray-900 leading-tight ${isAr ? 'arabic-font' : ''}`}>
                   {isAr ? industry.title_ar : industry.title_en}
                 </h4>
               </div>

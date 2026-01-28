@@ -15,7 +15,7 @@ export const CaseStudy = ({ data, isAr }: CaseStudyProps) => {
             <div className={`inline-block px-5 py-2 bg-green-50 border-2 border-green-200 rounded-full text-green-600 text-sm font-bold mb-6 uppercase tracking-wider ${isAr ? 'arabic-font' : ''}`}>
               {isAr ? 'دراسة حالة حقيقية' : 'Real-World Case Study'}
             </div>
-            <h2 className={`text-5xl font-black text-gray-900 mb-5 leading-tight ${isAr ? 'arabic-font' : ''}`}>
+            <h2 className={`text-5xl font-bold text-indigo-500 mb-5 leading-tight ${isAr ? 'arabic-font' : ''}`}>
               {data.caseStudy.title}
             </h2>
             <p className={`text-xl text-gray-600 mb-8 leading-relaxed ${isAr ? 'arabic-font' : ''}`}>

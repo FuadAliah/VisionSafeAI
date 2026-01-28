@@ -29,7 +29,7 @@ export const ComputerVision = ({ isAr }: ComputerVisionProps) => {
                   {isAr ? 'تقنية الذكاء الاصطناعي' : 'AI Technology'}
                 </span>
               </div>
-              <h2 className={`text-5xl font-black text-gray-900 mb-6 leading-tight ${isAr ? 'arabic-font' : ''}`}>
+              <h2 className={`text-5xl font-bold text-indigo-500 mb-6 leading-tight ${isAr ? 'arabic-font' : ''}`}>
                 {isAr ? 'عيون رقمية.. بذكاء بشري وسرعة فائقة' : 'Digital Eyes... Human Intelligence, Super Speed'}
               </h2>
               <p className={`text-xl text-gray-600 leading-relaxed mb-8 ${isAr ? 'arabic-font' : ''}`}>
@@ -48,7 +48,7 @@ export const ComputerVision = ({ isAr }: ComputerVisionProps) => {
                     <Cpu size={24} className="text-purple-600" />
                   </div>
                   <div className="flex-1">
-                    <h3 className={`text-xl font-black text-gray-900 mb-3 ${isAr ? 'arabic-font' : ''}`}>
+                    <h3 className={`text-xl font-bold text-gray-900 mb-3 ${isAr ? 'arabic-font' : ''}`}>
                       {isAr ? 'نقطة التحويل الذكي' : 'Smart Transformation Point'}
                     </h3>
                     <p className={`text-gray-600 text-sm leading-relaxed ${isAr ? 'arabic-font' : ''}`}>
@@ -67,7 +67,7 @@ export const ComputerVision = ({ isAr }: ComputerVisionProps) => {
                     <Zap size={24} className="text-yellow-600" />
                   </div>
                   <div className="flex-1">
-                    <h3 className={`text-xl font-black text-gray-900 mb-3 ${isAr ? 'arabic-font' : ''}`}>
+                    <h3 className={`text-xl font-bold text-gray-900 mb-3 ${isAr ? 'arabic-font' : ''}`}>
                       {isAr ? 'نقطة التحليل المباشر' : 'Real-time Analysis Point'}
                     </h3>
                     <p className={`text-gray-600 text-sm leading-relaxed ${isAr ? 'arabic-font' : ''}`}>

@@ -11,7 +11,7 @@ export const Sources = ({ data, isAr }: SourcesProps) => {
     <section className="py-24 px-6">
       <div className="max-w-5xl mx-auto">
         <div className="mb-12 text-center">
-          <h2 className={`text-5xl font-black text-gray-900 mb-5 ${isAr ? 'arabic-font' : ''}`}>
+          <h2 className={`text-5xl font-bold text-indigo-500 mb-5 ${isAr ? 'arabic-font' : ''}`}>
             {isAr ? 'المراجع والمصادر' : 'References & Sources'}
           </h2>
           <p className={`text-xl text-gray-600 max-w-3xl mx-auto ${isAr ? 'arabic-font' : ''}`}>
@@ -29,12 +29,12 @@ export const Sources = ({ data, isAr }: SourcesProps) => {
             </a>
           ))}
         </div>
-        
+
         {/* CTA */}
         <div className="text-center">
-          <a 
+          <a
             href="mailto:eye.design17@yahoo.com?subject=VisionSafe AI - General Inquiry&body=Hello, I'd like to learn more about VisionSafe AI solutions."
-            className={`inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white font-black rounded-full transition-all text-lg ${isAr ? 'arabic-font' : ''}`}
+            className={`inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white font-bold rounded-full transition-all text-lg ${isAr ? 'arabic-font' : ''}`}
           >
             {isAr ? 'ابدأ رحلة السلامة الآن' : 'Start Your Safety Journey Now'}
             <ChevronRight size={20} className={isAr ? 'rotate-180' : ''} />
