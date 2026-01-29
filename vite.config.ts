@@ -2,11 +2,10 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import path from 'path'
 
-// If you host at https://FuadAliah.github.io/VisionSafeAI/
-// set base to '/VisionSafeAI/'. If you plan to publish as a user site
-// (FuadAliah.github.io repository), set base to '/'.
+// Use '/' for custom domain (e.g. Hostinger) or user site at root.
+// Use '/VisionSafeAI/' only if hosting at https://<user>.github.io/VisionSafeAI/
 export default defineConfig({
-  base: '/VisionSafeAI/',
+  base: '/',
   plugins: [react()],
   resolve: {
     alias: {
